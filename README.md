@@ -20,6 +20,65 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Test the Database Connection (Step‑by‑step)
+
+We included a simple API route to verify your MongoDB connection using Mongoose. It performs an actual `ping` against the MongoDB admin database and returns diagnostics.
+
+Prerequisites:
+- Ensure `.env` has `MONGODB_URI` set. Example:
+  ```env
+  MONGODB_URI='your-mongodb-connection-string'
+  ```
+
+Steps:
+1. Install dependencies (first time only):
+   ```bash
+   npm install
+   ```
+2. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+3. Test the endpoint:
+   - In your browser open: http://localhost:3000/api/db-test
+   - Or using curl (pretty-printed if you have jq):
+     ```bash
+     curl -s http://localhost:3000/api/db-test | jq .
+     ```
+   - Or without jq:
+     ```bash
+     curl -s http://localhost:3000/api/db-test
+     ```
+
+Expected successful response example (fields may vary slightly by driver):
+```json
+{
+  "ok": true,
+  "startedAt": "2025-01-01T12:00:00.000Z",
+  "finishedAt": "2025-01-01T12:00:00.120Z",
+  "env": "development",
+  "uriPreview": "mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/mydb",
+  "dbName": "mydb",
+  "host": "<mongo-host-or-topology>",
+  "readyState": 1,
+  "mongooseVersion": "9.x.x",
+  "ping": { "ok": 1 }
+}
+```
+
+If something goes wrong, the endpoint returns `{ ok: false, error: "..." }` with HTTP 500. Troubleshooting:
+- `.env` really contains a valid `MONGODB_URI` and the app has been restarted after changing it.
+- Your IP/network is allowed in MongoDB Atlas (or your MongoDB server is reachable from your machine).
+- The MongoDB user has the right permissions to access the target database.
+- If using SRV (mongodb+srv), ensure DNS can resolve your cluster from your network.
+
+Quick test script (optional):
+```bash
+npm run db:test
+```
+
+Security note: The endpoint masks credentials when echoing the URI as `uriPreview`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
