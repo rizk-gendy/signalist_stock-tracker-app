@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="542d2b2d-3a03-47a8-88b9-47b59f329d4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/inngest/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/inngest/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Inngest/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Inngest/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/actions/auth.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/actions/auth.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/nodemailer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nodemailer/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/global.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rizk-gendy/signalist_stock-tracker-app.git",
-    "accountId": "314bbfd1-6b0c-42b4-a17e-2fac8d3edbf9"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rizk-gendy&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rizk-gendy/signalist_stock-tracker-app.git&quot;,
+    &quot;accountId&quot;: &quot;314bbfd1-6b0c-42b4-a17e-2fac8d3edbf9&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -44,7 +55,7 @@
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/rizkgendy/Desktop/React Practise/new_appp/my-app",
+    "last_opened_file_path": "/Users/rizkgendy/Documents/my-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +106,8 @@
       <workItem from="1763299589475" duration="39000" />
       <workItem from="1764755207823" duration="36000" />
       <workItem from="1764755309012" duration="1702000" />
+      <workItem from="1765921719421" duration="16000" />
+      <workItem from="1765921782650" duration="5798000" />
     </task>
     <servers />
   </component>
@@ -109,14 +122,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/Inngest/functions.ts</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/nodemailer/index.ts</url>
           <line>4</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -168,6 +168,13 @@ declare global {
         news?: MarketNewsArticle[];
     };
 
+    // Minimal user object used for sending emails and personalization
+    type UserForNewsEmail = {
+        id: string;
+        email: string;
+        name: string;
+    };
+
     type SearchCommandProps = {
         open?: boolean;
         setOpen?: (open: boolean) => void;

@@ -7,7 +7,8 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "db:test": "curl -s http://localhost:3000/api/db-test"
+    "db:test": "curl -s http://localhost:3000/api/db-test",
+    "inngest:dev": "npx inngest-cli@latest dev -u http://localhost:3000/api/inngest"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.11",
